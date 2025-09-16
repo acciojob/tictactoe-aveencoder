@@ -67,7 +67,7 @@ function handlerMove(e) {
     gameOver = true;
     return;
   }
-  currentPlayer = currentPlayer === "X" ? "O" : "X";
+  currentPlayer = currentPlayer === "x" ? "o" : "x";
   message.textContent = `${players[currentPlayer]}, you're up!`;
 }
 
