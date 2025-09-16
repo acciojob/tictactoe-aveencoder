@@ -58,7 +58,7 @@ function handlerMove(e) {
   const cell = e.target;
   cell.textContent = currentPlayer;
   if (checkWin()) {
-    message.textContent = `${players[currentPlayer]} wins!`;
+    message.textContent = `${players[currentPlayer]} congratulations you won!`;
     gameOver = true;
     return;
   }
