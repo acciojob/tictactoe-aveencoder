@@ -22,8 +22,8 @@ submitBtn.addEventListener('click', () => {
     alert('Please enter both player names!');
     return;
   }
-  players = { X: p1, O: p2 };
-  currentPlayer = "X";
+  players = { x: p1, o: p2 };
+  currentPlayer = "x";
   formView.classList.add("hidden");
   gameView.classList.remove("hidden");
   startGame();
@@ -31,7 +31,7 @@ submitBtn.addEventListener('click', () => {
 
 resetBtn.addEventListener('click', () => {
   gameOver = false;
-  currentPlayer = "X";
+  currentPlayer = "x";
   message.textContent = `${players[currentPlayer]}, you're up!`;
   createBoard();
 });
